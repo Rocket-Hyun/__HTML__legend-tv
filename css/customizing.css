@@ -1,0 +1,281 @@
+/* customizing*/
+
+.customizing {
+  height: 100vh;
+  width:70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card_wrap {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.card {
+  width:383px;
+  height:620px;
+  background-color: black;
+  text-align: center;
+  color:#ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 15px;
+}
+
+.card_title {
+  height:17%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.card_title > h2 {
+  font-family: SpoqaHanSans;
+  font-size: 30px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.13;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+}
+
+.card_desc {
+  height:17%;
+  font-family: SpoqaHanSans;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.56;
+  letter-spacing: normal;
+  color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.is_btn_clicked{
+  background-color: #4369ff !important;
+}
+
+button:focus {
+  border: solid 1px #4369ff;
+  background-color: #4369ff;
+}
+
+button:target {
+  border: solid 1px #4369ff;
+  background-color: #4369ff;
+}
+
+button.active {
+  border: solid 1px #4369ff;
+  background-color: #4369ff;
+}
+
+
+.card_btns {
+  display: flex;
+  flex-direction: column;
+}
+
+.character > .card_btns {
+  align-items: center;
+}
+
+.char_btn {
+  width:72%;
+  height:50px;
+  margin: 25px 0px;
+  background-color: rgba(255, 255, 255, 0.12);
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.char_text{
+  font-family: SpoqaHanSans;
+  font-size: 20px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.8;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+}
+
+.position > .card_btns {
+  padding-left: 34px;
+  padding-right: 34px;
+}
+
+.po_wrap{
+  justify-content: center;
+}
+
+.po_btn {
+  width:196px;
+  height:47px;
+  margin: 7.5px 0px;
+  background-color: rgba(255, 255, 255, 0.12);
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card_btns > .left_btn {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.card_btns > .cen_btn {
+  display: flex;
+  justify-content: center;
+}
+
+.card_btns > .right_btn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.po_text {
+  font-family: SpoqaHanSans;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.11;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.tier_wrap {
+  display: flex;
+  margin: 12.5px 0;
+}
+
+.tier_btn {
+  background-color: rgba(255, 255, 255, 0.12);
+  border-radius: 50px;
+  height: 47px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 15px;
+}
+
+.tier_btn > span {
+  font-family: SpoqaHanSans;
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.93;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+}
+
+.lv1 {
+  padding-left: 45px;
+}
+
+.lv2{
+  padding-left: 7px;
+}
+
+.lv3{
+  padding-left: 79px;
+}
+
+.lv4{
+  padding-left: 140px;
+}
+
+.unranked {
+  width: 110px;
+}
+
+.bronze {
+  width: 104px;
+}
+
+.silver {
+  width: 104px;
+}
+
+.gold {
+  width: 95px;
+}
+
+.platinum {
+  width: 110px;
+}
+
+.diamond {
+  width: 110px;
+}
+
+.master {
+  width: 104px;
+}
+
+.challenger {
+  width: 130px;
+}
+
+
+.save_btn{
+  width:220px;
+  height: 54px;
+  border-radius: 50px;
+  border: 1px solid #fff;
+  position: absolute;
+  bottom:70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.save_btn > span{
+  font-family: AppleSDGothicNeo;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+}
+
+.pass_btn{
+  position: absolute;
+  top:100px;
+  right:0;
+  display: flex;
+  align-items: center;
+}
+
+.pass_btn > span {
+  font-family: AppleSDGothicNeo;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+  margin-right: 35px;
+}

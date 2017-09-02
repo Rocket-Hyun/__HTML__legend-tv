@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="./css/nav.css">
+  <link rel="stylesheet" type="text/css" href="./css/upload.css">
+</head>
+<body>
+<div class="container">
+  <section class="upload">
+    <div class="upload_title">
+      <h1>영상업로드</h1>
+    </div>
+    <div class="upload_content_wrap">
+      <div class="video_type">
+        <button class="video mad target">
+          <span>매드무비</span>
+        </button>
+        <button class="video dead target">
+          <span>데드무비</span>
+        </button>
+      </div>
+      <div class="champ_select">
+        <div class="br br1">
+          <h2>챔프선택</h2>
+          <span>(영상의 주인공이 되는 챔프를 선택해주세요)</span>
+        </div>
+        <div class="br br2">
+          <input type="text" placeholder="챔프를 입력하세요.">
+        </div>
+      </div>
+      <div class="video_title">
+        <div class="br br1">
+          <h2>제목</h2><span>(0/20)</span>
+        </div>
+        <div class="br br2">
+          <input type="text"  placeholder="제목은 20자 이내로 작성해주세요."/>
+        </div>
+      </div>
+      <div class="video_content">
+        <div class="br br1">
+          <h2>내용</h2>
+        </div>
+        <div class="br br2">
+          <textarea class="style-1" placeholder="영상을 잘 표현할 수 있는 내용을 입력해 주세요."></textarea>
+        </div>
+      </div>
+      <div class="video_url">
+        <div class="br br1">
+          <h2>유투브 영상 URL</h2>
+        </div>
+        <div class="br br2">
+          <input type="text" placeholder="유투브 영상주소를 입력해주세요."/>
+        </div>
+      </div>
+      <div class="position">
+        <div class="br br1">
+          <h2>포지션</h2>
+        </div>
+        <div class="br br2">
+          <div class="pos_wrap">
+            <input name="position" type='radio' id='top'/>
+            <label for='top'><span></span>탑</label>
+            <input name="position" type='radio' id='mid'/>
+            <label for='mid'><span></span>미드</label>
+            <input name="position" type='radio' id='deal'/>
+            <label for='deal'><span></span>원딜</label>
+            <input name="position" type='radio' id='sup'/>
+            <label for='sup'><span></span>서폿</label>
+            <input name="position" type='radio' id='jungle'/>
+            <label for='jungle'><span></span>정글</label>
+          </div>
+        </div>
+      </div>
+      <div class="video_tier">
+        <div class="br br1">
+          <h2>티어</h2>
+        </div>
+        <div class="br br2">
+          <select>
+            <option disabled selected>티어선택</option>
+            <option>언랭</option>
+            <option>실버</option>
+            <option>플래티넘</option>
+            <option>마스터</option>
+            <option>브론즈</option>
+            <option>골드</option>
+            <option>다이아</option>
+            <option>챌린저</option>
+          </select>
+        </div>
+      </div>
+      <div class="type">
+        <div class="br br1">
+          <h2>특성</h2>
+        </div>
+        <div class="br br2">
+          <input name="type" type='radio' id='ap'/>
+          <label for='ap'><span></span>AP</label>
+          <input name="type" type='radio' id='ad'/>
+          <label for='ad'><span></span>AD</label>
+        </div>
+      </div>
+    </div>
+    <div class="confirm_btn">
+      <h2>완료</h2>
+    </div>
+  </section>
+  <div class="close_btn">
+    <img src="./imgs/button-x.png" alt="닫기버튼">
+  </div>
+</div>
+</body>
+</html>

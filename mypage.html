@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="./css/nav.css">
+  <link rel="stylesheet" type="text/css" href="./css/mypage.css">
+
+
+  <!-- jquery cdn -->
+  <script
+    src="https://code.jquery.com/jquery-3.1.1.min.js"
+    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+    crossorigin="anonymous"></script>
+
+</head>
+<body>
+  <header class="header">
+      <div class="header_ele header_left">
+        <h1 class="logo"><img src="./imgs/logo-image.png" alt="Legend TV"/><img src="./imgs/logo-text.png" alt=""/></h1>
+        <div class="video_switch">
+
+        </div>
+      </div>
+      <div class="header_ele header_cen hidden">
+        <ul class="position_list">
+          <li><img src="./imgs/button-top-off.png" alt="top"></li>
+          <li><img src="./imgs/button-jungle-off.png" alt="jungle"></li>
+          <li><img src="./imgs/button-mid-off.png" alt="mid"></li>
+          <li><img src="./imgs/button-sup-off.png" alt="support"></li>
+          <li><img src="./imgs/button-ad-off.png" alt="ad"></li>
+        </ul>
+      </div>
+      <div class="header_ele header_right">
+        <ul class="user_control">
+          <li><img class="hidden" src="./imgs/button-upload.png" alt="upload" /></li>
+          <li><img src="./imgs/combined-shape.png" alt="setting" /></li>
+          <li>Junghyun Park</li>
+          <li><img src="./imgs/bitmap.png" alt="profile picture" /></li>
+          <li><img src="./imgs/button-profile.png" alt="drop down" /></li>
+        </ul>
+      </div>
+  </header>
+<div class="container">
+  <article class="mypage">
+    <section class="profile_admin">
+      <div class="pa_wrap">
+        <img src="./imgs/user-icon.png" alt=""><h2>프로필 관리</h2>
+      </div>
+      <div class="pa_wrap_2">
+        <div class="nick_change">
+          <span>닉네임 변경</span>
+          <input type="text" placeholder="닉네임 입력">
+        </div>
+        <div class="profile_text">
+          <span>프로필 사진</span>
+        </div>
+        <div class="profile_input">
+          <div class="profile_pic">
+            <img src="./imgs/bitmap2.png" alt="my profile picture">
+          </div>
+          <div class="profile_search">
+              <label class="search_btn" for="ex_filename"><span>파일찾기</span></label>
+              <input type="file" id="ex_filename" class="upload-hidden">
+
+
+              <input class="file_address" value="파일선택" disabled="disabled">
+
+<script>
+  $(document).ready(function(){ var fileTarget = $('.profile_search .upload-hidden');
+    fileTarget.on('change', function(){ // 값이 변경되면
+    if(window.FileReader){
+      // modern browser
+      var filename = $(this)[0].files[0].name; } else { // old IE
+        var filename = $(this).val().split('/').pop().split('\\').pop(); // 파일명만 추출
+      }
+
+      // 추출한 파일명 삽입
+      $(this).siblings('.file_address').val(filename);
+    });
+  });
+</script>
+          </div>
+        </div>
+        <button class="save_btn">
+          <span>변경 내용 저장</span>
+        </button>
+      </div>
+      <div class="pa_wrap pa_text2">
+          <img src="./imgs/lock-icon.png" alt=""><h2>내 계정 관리</h2>
+      </div>
+      <div class="pa_wrap_3">
+        <span>아래 계정 탈퇴 버튼을 누르면 모든 게시글과 관련 활동 정보가 소멸하며, 이 동작은 돌이킬 수 없습니다. 정말 계정을 탈퇴하시겠습니까?</span>
+      </div>
+      <div class="pa_wrap_4">
+        <button class="unsub_btn">
+          <span>변경 내용 저장</span>
+        </button>
+      </div>
+    </section>
+    <section class="my_video">
+      <div class="pa_wrap">
+        <img src="./imgs/menu-icon.png" alt=""><h2>내 게시글 관리</h2>
+      </div>
+      <div class="videos_wrap">
+          <div class="scrollbar style-1">
+            <div class="force-overflow">
+              <div class="card_row">
+                <div class="video_card">
+                  <div class="preview">
+                  </div>
+                  <div class="title">
+                    <span>자이라 핫캐리 레전드...</span>
+                    <img src="./imgs/pen-icon.png" alt="수정하기">
+                  </div>
+                  <div class="viewlike">
+                    <div class="total view">
+                      <img src="./imgs/view-icon.png" alt="">
+                      <span>3298</span>
+                    </div>
+                    <div class="total like">
+                      <img src="./imgs/like-icon.png" alt="">
+                      <span>1216</span>
+                    </div>
+                  </div>
+                  <div class="sticker blue">
+                    <img src="./imgs/blue-icon.png" alt="">
+                  </div>
+                </div>
+                <div class="video_card">
+                  <div class="preview">
+                  </div>
+                  <div class="title">
+                    <span>자이라 핫캐리 레전드...</span>
+                    <img src="./imgs/pen-icon.png" alt="수정하기">
+                  </div>
+                  <div class="viewlike">
+                    <div class="total view">
+                      <img src="./imgs/view-icon.png" alt="">
+                      <span>3298</span>
+                    </div>
+                    <div class="total like">
+                      <img src="./imgs/like-icon.png" alt="">
+                      <span>1216</span>
+                    </div>
+                  </div>
+                  <div class="sticker red">
+                    <img src="./imgs/red-icon.png" alt="">
+                  </div>
+                </div>
+                <div class="video_card">
+                  <div class="preview">
+                  </div>
+                  <div class="title">
+                    <span>자이라 핫캐리 레전드...</span>
+                    <img src="./imgs/pen-icon.png" alt="수정하기">
+                  </div>
+                  <div class="viewlike">
+                    <div class="total view">
+                      <img src="./imgs/view-icon.png" alt="">
+                      <span>3298</span>
+                    </div>
+                    <div class="total like">
+                      <img src="./imgs/like-icon.png" alt="">
+                      <span>1216</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="video_card">
+                  <div class="preview">
+                  </div>
+                  <div class="title">
+                    <span>자이라 핫캐리 레전드...</span>
+                    <img src="./imgs/pen-icon.png" alt="수정하기">
+                  </div>
+                  <div class="viewlike">
+                    <div class="total view">
+                      <img src="./imgs/view-icon.png" alt="">
+                      <span>3298</span>
+                    </div>
+                    <div class="total like">
+                      <img src="./imgs/like-icon.png" alt="">
+                      <span>1216</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="video_card">
+                  <div class="preview">
+                  </div>
+                  <div class="title">
+                    <span>자이라 핫캐리 레전드...</span>
+                    <img src="./imgs/pen-icon.png" alt="수정하기">
+                  </div>
+                  <div class="viewlike">
+                    <div class="total view">
+                      <img src="./imgs/view-icon.png" alt="">
+                      <span>3298</span>
+                    </div>
+                    <div class="total like">
+                      <img src="./imgs/like-icon.png" alt="">
+                      <span>1216</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="video_card">
+                  <div class="preview">
+                  </div>
+                  <div class="title">
+                    <span>자이라 핫캐리 레전드...</span>
+                    <img src="./imgs/pen-icon.png" alt="수정하기">
+                  </div>
+                  <div class="viewlike">
+                    <div class="total view">
+                      <img src="./imgs/view-icon.png" alt="">
+                      <span>3298</span>
+                    </div>
+                    <div class="total like">
+                      <img src="./imgs/like-icon.png" alt="">
+                      <span>1216</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="video_card">
+                  <div class="preview">
+                  </div>
+                  <div class="title">
+                    <span>자이라 핫캐리 레전드...</span>
+                    <img src="./imgs/pen-icon.png" alt="수정하기">
+                  </div>
+                  <div class="viewlike">
+                    <div class="total view">
+                      <img src="./imgs/view-icon.png" alt="">
+                      <span>3298</span>
+                    </div>
+                    <div class="total like">
+                      <img src="./imgs/like-icon.png" alt="">
+                      <span>1216</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="video_card">
+                  <div class="preview">
+                  </div>
+                  <div class="title">
+                    <span>자이라 핫캐리 레전드...</span>
+                    <img src="./imgs/pen-icon.png" alt="수정하기">
+                  </div>
+                  <div class="viewlike">
+                    <div class="total view">
+                      <img src="./imgs/view-icon.png" alt="">
+                      <span>3298</span>
+                    </div>
+                    <div class="total like">
+                      <img src="./imgs/like-icon.png" alt="">
+                      <span>1216</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="video_card">
+                  <div class="preview">
+                  </div>
+                  <div class="title">
+                    <span>자이라 핫캐리 레전드...</span>
+                    <img src="./imgs/pen-icon.png" alt="수정하기">
+                  </div>
+                  <div class="viewlike">
+                    <div class="total view">
+                      <img src="./imgs/view-icon.png" alt="">
+                      <span>3298</span>
+                    </div>
+                    <div class="total like">
+                      <img src="./imgs/like-icon.png" alt="">
+                      <span>1216</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="video_card">
+                  <div class="preview">
+                  </div>
+                  <div class="title">
+                    <span>자이라 핫캐리 레전드...</span>
+                    <img src="./imgs/pen-icon.png" alt="수정하기">
+                  </div>
+                  <div class="viewlike">
+                    <div class="total view">
+                      <img src="./imgs/view-icon.png" alt="">
+                      <span>3298</span>
+                    </div>
+                    <div class="total like">
+                      <img src="./imgs/like-icon.png" alt="">
+                      <span>1216</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </section>
+  </article>
+</div>
+</body>
+</html>
