@@ -7,7 +7,7 @@ li {
 }
 
 body {
-  background-image: url("./imgs/back.jpg");
+  background-image: url("../imgs/back.jpg");
   background-size: cover;
   margin: 0;
 }
