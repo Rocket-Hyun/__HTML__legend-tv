@@ -105,13 +105,19 @@
         </div>
       </div>
     </div>
-    <div class="confirm_btn">
+    <div class="confirm_btn" onclick="tohome()" style="cursor:pointer;">
       <h2>완료</h2>
     </div>
   </section>
-  <div class="close_btn">
+  <div class="close_btn" onclick="tohome()" style="cursor:pointer;">
     <img src="./imgs/button-x.png" alt="닫기버튼">
   </div>
 </div>
+
+<script>
+  function tohome() {
+    location.href="/index.html";
+  }
+</script>
 </body>
 </html>

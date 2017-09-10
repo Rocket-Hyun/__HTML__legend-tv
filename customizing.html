@@ -57,12 +57,12 @@
         </div>
         <div class="card_desc">Click the champion character you <br />want to see! Or you can skip this step.</div>
       </article>
-        <button class="save_btn">
+        <button class="save_btn" onclick="tohome()">
           <span>저장</span>
         </button>
     </div>
     <div class="card_wrap tier_wrap">
-      <div class="pass_btn">
+      <div class="pass_btn" onclick="tohome()">
         <span>건너뛰기</span><img src="./imgs/arrow_right.png" alt="right arrow">
       </div>
       <article class="card tier">
@@ -106,5 +106,11 @@
     </div>
   </section>
 </div>
+
+<script>
+  function tohome() {
+    location.href="/index.html";
+  }
+</script>
 </body>
 </html>

@@ -76,13 +76,18 @@
 .v1 {
   width:49.5%;
   height:28%;
-  background-color: red;
+  background-color: #000;
+  background-image: url('http://upload.inven.co.kr/upload/2014/05/27/bbs/i3305597914.png');
+  background-size: cover;
   height:380px;
 }
 .v2 {
   width:49.5%;
   height:28%;
-  background-color: blue;
+  background-color: #000;
+  background-image: url('http://upload2.inven.co.kr/upload/2016/04/05/bbs/i13265642990.png');
+  background-size: cover;
+  /*background-color: blue;*/
   height:380px;
 }
 
